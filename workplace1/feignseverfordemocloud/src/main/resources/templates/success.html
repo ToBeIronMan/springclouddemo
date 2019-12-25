@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>登录</title>
+    
+</head>
+<body>
+    <div class="container">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="table_list">
+            <thead>
+            <tr>
+                <th width="20%">编号</th>
+                <th width="20%">用户名</th>
+                <th width="20%">密码</th>
+              
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="user:${users}">
+                <td height="40px" th:text="${user.id}" ></td>
+                <td th:text="${user.username}"></td>
+                <td th:text="${user.password}"></td>
+
+            </tr>
+           
+            </tbody>
+            
+        </table>
+    </div>
+    
+</body>
+</html>

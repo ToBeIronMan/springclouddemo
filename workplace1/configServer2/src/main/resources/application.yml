@@ -1,0 +1,20 @@
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8763
+
+spring:
+      
+ cloud:
+    config:
+      server:
+        git:
+           uri: https://github.com/ToBeIronMan/test.git
+           username: ToBeIronMan
+           password: zjx19970113
+           
+ application:
+    name: config-server
